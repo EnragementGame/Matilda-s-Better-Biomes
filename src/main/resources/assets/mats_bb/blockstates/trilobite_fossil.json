@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "fossils=1": {
+      "model": "mats_bb:block/trilobite_fossil_template"
+    },
+    "fossils=2": {
+      "model": "mats_bb:block/trilobite_fossil_two"
+    },
+    "fossils=3": {
+      "model": "mats_bb:block/trilobite_fossil_two"
+    },
+    "fossils=4": {
+      "model": "mats_bb:block/trilobite_fossil_two"
+    }
+  }
+}

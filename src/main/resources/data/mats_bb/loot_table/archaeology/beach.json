@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:archaeology",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:kelp",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:seagrass",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ink_sac",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glass_bottle",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:angler_pottery_sherd",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mats_bb:trilobite_fossil",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:raw_copper"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:raw_iron"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "mats_bb:archaeology/beach"
+}
