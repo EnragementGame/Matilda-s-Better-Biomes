@@ -27,11 +27,12 @@ import javax.annotation.Nullable;
 public class TrilobiteFossilBlock extends Block implements SimpleWaterloggedBlock{
     public static final MapCodec<TrilobiteFossilBlock> CODEC = simpleCodec(TrilobiteFossilBlock::new);
     public static final int MIN_FOSSIL = 1;
-    public static final int MAX_FOSSIL = 3;
-    private static final VoxelShape ONE_FOSSIL_Z = Block.box(6.0, 0.0, 5.0, 10.0, 2.0, 11.0);
-    private static final VoxelShape ONE_FOSSIL_X = Block.box(5.0, 0.0, 6.0, 11.0, 2.0, 10.0);
+    public static final int MAX_FOSSIL = 4;
+    private static final VoxelShape ONE_FOSSIL_Z = Block.box(6.0, 0.0, 5.0, 9.0, 2.0, 10.0);
+    private static final VoxelShape ONE_FOSSIL_X = Block.box(5.0, 0.0, 6.0, 10.0, 2.0, 9.0);
     private static final VoxelShape MUlTIPLE_FOSSILS = Block.box(1.0, 0.0, 1.0, 15.0, 2.0, 15.0);
     public static final IntegerProperty FOSSILS = IntegerProperty.create("fossils",MIN_FOSSIL, MAX_FOSSIL);
+    public static final IntegerProperty REVIVE_STATE = IntegerProperty.create("revive_state",0, 4);
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
@@ -58,7 +59,7 @@ public class TrilobiteFossilBlock extends Block implements SimpleWaterloggedBloc
         //Thank you Supplementaries dev(s) for making a directional block that lets you place multiple of itself on the same block <3
         BlockState blockState = context.getLevel().getBlockState(context.getClickedPos());
         if (blockState.is(this)) {
-            return blockState.setValue(FOSSILS, Math.min(3, blockState.getValue(FOSSILS) + 1));
+            return blockState.setValue(FOSSILS, Math.min(4, blockState.getValue(FOSSILS) + 1));
         }
         boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
         for (Direction direction : context.getNearestLookingDirections()) {

@@ -1,7 +1,7 @@
 {
   "variants": {
     "facing=north,fossils=1": {
-      "model": "mats_bb:block/trilobite_fossil_template"
+      "model": "mats_bb:block/trilobite_fossil_one"
     },
     "facing=north,fossils=2": {
       "model": "mats_bb:block/trilobite_fossil_two"
@@ -9,8 +9,11 @@
     "facing=north,fossils=3": {
       "model": "mats_bb:block/trilobite_fossil_three"
     },
+    "facing=north,fossils=4": {
+      "model": "mats_bb:block/trilobite_fossil_four"
+    },
     "facing=east,fossils=1": {
-      "model": "mats_bb:block/trilobite_fossil_template",
+      "model": "mats_bb:block/trilobite_fossil_one",
       "y": 90
     },
     "facing=east,fossils=2": {
@@ -21,8 +24,12 @@
       "model": "mats_bb:block/trilobite_fossil_three",
       "y": 90
     },
+    "facing=east,fossils=4": {
+      "model": "mats_bb:block/trilobite_fossil_four",
+      "y": 90
+    },
     "facing=south,fossils=1": {
-      "model": "mats_bb:block/trilobite_fossil_template",
+      "model": "mats_bb:block/trilobite_fossil_one",
       "y": 180
     },
     "facing=south,fossils=2": {
@@ -33,8 +40,12 @@
       "model": "mats_bb:block/trilobite_fossil_three",
       "y": 180
     },
+    "facing=south,fossils=4": {
+      "model": "mats_bb:block/trilobite_fossil_four",
+      "y": 180
+    },
     "facing=west,fossils=1": {
-      "model": "mats_bb:block/trilobite_fossil_template",
+      "model": "mats_bb:block/trilobite_fossil_one",
       "y": 270
     },
     "facing=west,fossils=2": {
@@ -43,6 +54,10 @@
     },
     "facing=west,fossils=3": {
       "model": "mats_bb:block/trilobite_fossil_three",
+      "y": 270
+    },
+    "facing=west,fossils=4": {
+      "model": "mats_bb:block/trilobite_fossil_four",
       "y": 270
     }
   }
